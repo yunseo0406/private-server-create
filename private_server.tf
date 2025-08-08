@@ -3,5 +3,5 @@ resource "ncloud_server" "private_server" {
   name                      = "private-server"
   server_image_number       = "23214590" # ubuntu 22.04-base
   server_spec_code          = "s2-g3"
-  login_key_name            = "yunseo-key" # 기존에 만든 키 이름
+  login_key_name            =  ncloud_login_key.key.key_name
 }

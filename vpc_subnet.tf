@@ -8,7 +8,7 @@ resource "ncloud_vpc" "yunseo_vpc" {
 resource "ncloud_subnet" "private_subnet" {
   name             = "private-subnet"
   vpc_no           = ncloud_vpc.yunseo_vpc.id
-  subnet           = "10.0.1.0/24"
+  subnet           = "10.0.2.0/24"
   zone             = "KR-2"
   subnet_type      = "PRIVATE"
   usage_type       = "GEN"

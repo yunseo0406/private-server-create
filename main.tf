@@ -9,6 +9,6 @@ terraform {
 
 provider "ncloud" {
     region = "KR"
-    site = "private"
+    site = "public"
     support_vpc = true
 }
